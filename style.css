@@ -97,6 +97,69 @@
     }
 
     #Moto .product-card img {
+        
+/* Galleria scorrevole delle moto */
+#Moto .slider {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #e63946 #22252d;
+}
+
+#Moto .slider-images {
+    display: flex;
+    width: 100%;
+}
+
+#Moto .slider-images img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    scroll-snap-align: start;
+    display: block;
+}
+
+/* Scheda moto */
+#Moto .product-card {
+    background: #22252d;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #353944;
+}
+
+/* Testi */
+#Moto .product-info {
+    padding: 20px;
+}
+
+#Moto .product-info h3 {
+    color: white;
+    font-size: 22px;
+}
+
+#Moto .price {
+    display: block;
+    color: #e63946;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#Moto .product-info p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    #Moto .slider-images img {
+        height: 220px;
+    }
+}
+
         height: 220px;
     }
 }
